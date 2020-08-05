@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="361.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sandeep.Commuto.SignUp2">
+   <children>
+      <ImageView fitHeight="661.0" fitWidth="361.0" pickOnBounds="true">
+         <image>
+            <Image url="@sanimage.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="15.38">
+               <input>
+                  <ColorAdjust brightness="-0.27" />
+               </input>
+            </GaussianBlur>
+         </effect>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="67.0" prefHeight="72.0" prefWidth="260.0" style="-fx-text-fill: white;" text="Almost there...">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="getStartedButton" layoutX="55.0" layoutY="576.0" mnemonicParsing="false" onAction="#getStartedPushed" opacity="0.9" prefHeight="35.0" prefWidth="237.0" style="-fx-background-color: dodgerblue; -fx-background-radius: 15;" text="Get Started" textFill="WHITE" />
+      <Label layoutX="36.0" layoutY="155.0" prefHeight="42.0" prefWidth="276.0" style="-fx-text-fill: white;" text="Choose an unique username">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameField" layoutX="50.0" layoutY="210.0" onKeyReleased="#handleKeyReleased" opacity="0.57" prefHeight="35.0" prefWidth="247.0" promptText="Username" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="62.0" layoutY="285.0" prefHeight="42.0" prefWidth="211.0" style="-fx-text-fill: white;" text="Finally, set a password">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="50.0" layoutY="341.0" onKeyReleased="#handleKeyReleased" opacity="0.57" prefHeight="35.0" prefWidth="247.0" promptText="Password" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="ConfirmPasswordField" layoutX="51.0" layoutY="413.0" onKeyReleased="#handleKeyReleased" opacity="0.57" prefHeight="42.0" prefWidth="247.0" promptText="Confirm Password" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </PasswordField>
+      <Line endX="162.6199951171875" layoutX="163.0" layoutY="499.0" startX="-141.3800048828125" stroke="WHITE" />
+      <CheckBox fx:id="termsCheckbox" layoutX="12.0" layoutY="513.0" mnemonicParsing="false" style="-fx-text-fill: white;" text="I agree to Commuto's Terms of Service and  Privacy Policy" />
+      <Label fx:id="pass" layoutX="30.0" layoutY="22.0" opacity="0.0" text="Label" />
+   </children>
+</AnchorPane>

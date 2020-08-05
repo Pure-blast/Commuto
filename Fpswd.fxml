@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="654.0" prefWidth="361.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sandeep.Commuto.Fpswd">
+   <children>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#1c1c1c" height="135.0" layoutX="15.0" layoutY="511.0" opacity="0.96" stroke="#1c1c1c" strokeType="INSIDE" width="336.0" />
+      <Label layoutX="110.0" layoutY="27.0" prefHeight="48.0" prefWidth="128.0" style="-fx-text-fill: white;" text="Uh-Oh,">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="75.0" prefHeight="48.0" prefWidth="298.0" style="-fx-text-fill: white;" text="Forgot Password?">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="149.0" style="-fx-text-fill: white;" text="We will get you rolling back in a jiffy...">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="UpdatePasswordButton" layoutX="57.0" layoutY="551.0" mnemonicParsing="false" onAction="#updatePswd" opacity="0.91" prefHeight="38.0" prefWidth="248.0" style="-fx-text-fill: white; -fx-background-color: dodgerblue; -fx-background-radius: 15;" text="Update Password" />
+      <Hyperlink fx:id="back" layoutX="161.0" layoutY="608.0" onAction="#signInBack" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <TextField fx:id="userNameField" layoutX="43.0" layoutY="200.0" opacity="0.57" prefHeight="38.0" prefWidth="262.0" promptText="Username" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="emailIDField" layoutX="43.0" layoutY="261.0" onKeyReleased="#handleKeyReleased" opacity="0.57" prefHeight="38.0" prefWidth="262.0" promptText="Email-ID" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <PasswordField fx:id="PasswordField" layoutX="39.0" layoutY="390.0" onKeyReleased="#handleKeyReleased" opacity="0.57" prefHeight="38.0" prefWidth="262.0" promptText="Password" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <font>
+            <Font size="18.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="ConfirmPasswordField" layoutX="39.0" layoutY="447.0" onKeyReleased="#handleKeyReleased" opacity="0.57" prefHeight="38.0" prefWidth="262.0" promptText="Confirm Password" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <font>
+            <Font size="18.0" />
+         </font></PasswordField>
+      <Label layoutX="118.0" layoutY="351.0" style="-fx-text-fill: white;" text="Update Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Line endX="157.0" layoutX="174.0" layoutY="340.0" startX="-158.0" stroke="WHITE" />
+      <Line endX="-66.0" layoutX="276.0" layoutY="522.0" startX="-115.0" stroke="WHITE" strokeWidth="3.0" />
+   </children>
+
+</AnchorPane>
